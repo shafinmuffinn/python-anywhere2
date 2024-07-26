@@ -1,0 +1,85 @@
+
+
+#welcome {
+    background-color: #000000;
+    /*background: linear-gradient(to right top, #45474B, #000000);*/
+    padding: 6rem 12%;
+  }
+  
+#welcome header {
+    display: flex;
+    align-items: flex-start;
+    margin: 3rem auto;
+  }
+  
+#welcome img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    object-position: top;
+    border: 5px solid #E90074;
+    border-radius: 12px;
+    background-color: #000000;
+    transform: rotateZ(-5deg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  }
+  
+#welcome h2 {
+    font-size: 3.5rem;
+    margin: 0 0 0 2rem;
+    color: #e4e4e4;
+    width: 10rem;
+  }
+  
+#welcome p {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+#latest-posts {
+    background-color:#121212;
+    padding: 2rem;
+    border-color: #E90074;
+    color: #e4e4e4;
+    
+    border-radius: 12px;
+    width: 60rem;
+    margin: -6rem auto 2rem auto;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+#latest-posts h2 {
+    text-align: center;
+    color: #e4e4e4;
+  }
+  
+#latest-posts ul {
+    list-style: none;
+    margin: 0;
+    color: white;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+#latest-posts li {
+    color: #e4e4e4;
+    flex: 1;
+  }
+  
+#about {
+    text-align: center;
+    padding: 3rem;
+    background-color: black;
+    margin-top: 5rem;
+  }
+  
+#about h2 {
+    font-size: 3rem;
+    color:#E90074;
+  }
+  
+#about p {
+    font-size: 1.5rem;
+    color: #e4e4e4;
+  }

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    My Blog
+{% endblock%}
+
+{% block css_files %}
+    <link rel='stylesheet' href={% static 'my_blog/post.css' %}/> 
+    <link rel='stylesheet' href={% static "my_blog/index.css" %} />
+{% endblock %}
+
+{% block content %}
+
+    <section id='welcome'>
+        <header>
+            <img src="{% static "my_blog/images/max.png" %}" alt='Shafin - The Author of This Blog'>
+            <h2>Hi, I'm Shafin</h2>
+        </header>
+        <p>Welcome to my website, it's not a devlog. I lied.</p>
+    </section>
+
+    <section id='latest-posts'>
+        <h2>Recently Watched</h2>
+
+        <ul>
+            {% for post in posts %}
+                {% include "my_blog/includes/post.html" %}
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section id='about'>
+        <h2>WHAT I DO</h2>
+        <p>:D</p>
+        <p>i love programming, bla bla bla, I love to help others and i enjoy exploring new tech!</p>
+        <p>this is another paragraph hehe, nvm</p>
+    </section>
+{% endblock %}
